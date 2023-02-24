@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f7fb;
+}
+.button{
+    display: flex;
+    align-items: center;
+    padding: 20px 36px;
+    border-radius: 8px;
+    background-color: #000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+}
+.button .icon{
+    font-size: 28px;
+    color: #fff;
+    margin-right: 10px;
+    display: none;
+}
+.button.checked .icon{
+    display: flex;
+}
+.icon.spinner.spin{
+    animation: spin 1.3s ease-in-out infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.icon.check{
+    display: inline-flex;
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #47c415;
+}
+.button .btn-text{
+    font-size: 32px;
+    font-weight: 400px;
+    color: #fff;
+}
